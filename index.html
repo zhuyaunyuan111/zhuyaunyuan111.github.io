@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蓝印花布文创 | 某某工作室</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            background-color: #f0f5f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1a3a5c;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .product-info {
+            padding: 1.2rem;
+            text-align: center;
+        }
+
+        .product-name {
+            font-size: 1.2rem;
+            color: #1a3a5c;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        footer {
+            background-color: #1a3a5c;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            .product-grid {
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>蓝印花布文创</h1>
+        <p>某某工作室 · 手作原创</p>
+    </header>
+
+    <div class="container">
+        <div class="product-grid">
+            <!-- 发圈1 -->
+            <div class="product-card">
+                <img src="1.jpg" alt="蓝白拼色蕾丝发圈" class="product-img">
+                <div class="product-info">
+                    <div class="product-name">蓝白拼色蕾丝发圈</div>
+                    <p>清新碎花与条纹拼接，搭配温柔蕾丝边</p>
+                </div>
+            </div>
+
+            <!-- 发圈2 -->
+            <div class="product-card">
+                <img src="2.jpg" alt="浅蓝碎花蕾丝发圈" class="product-img">
+                <div class="product-info">
+                    <div class="product-name">浅蓝碎花蕾丝发圈</div>
+                    <p>温柔浅蓝底+小碎花，蕾丝花边增添精致感</p>
+                </div>
+            </div>
+
+            <!-- 发圈3 -->
+            <div class="product-card">
+                <img src="3.jpg" alt="藏青条纹蕾丝发圈" class="product-img">
+                <div class="product-info">
+                    <div class="product-name">藏青条纹蕾丝发圈</div>
+                    <p>复古藏青条纹，蕾丝内衬设计</p>
+                </div>
+            </div>
+
+            <!-- 发圈4 -->
+            <div class="product-card">
+                <img src="4.jpg" alt="拼色基础款发圈" class="product-img">
+                <div class="product-info">
+                    <div class="product-name">拼色基础款发圈</div>
+                    <p>无蕾丝基础款，双色拼接简约百搭</p>
+                </div>
+            </div>
+
+            <!-- 香囊1 -->
+            <div class="product-card">
+                <img src="5.jpg" alt="小狐狸香囊挂饰" class="product-img">
+                <div class="product-info">
+                    <div class="product-name">小狐狸香囊挂饰</div>
+                    <p>蓝印花布小狐狸造型，可作香包/挂饰</p>
+                </div>
+            </div>
+
+            <!-- 香囊2 -->
+            <div class="product-card">
+                <img src="6.jpg" alt="葫芦香囊挂饰" class="product-img">
+                <div class="product-info">
+                    <div class="product-name">葫芦香囊挂饰</div>
+                    <p>传统葫芦造型，寓意福禄安康</p>
+                </div>
+            </div>
+
+            <!-- 香囊3 -->
+            <div class="product-card">
+                <img src="7.jpg" alt="粽子香囊挂饰" class="product-img">
+                <div class="product-info">
+                    <div class="product-name">粽子香囊挂饰</div>
+                    <p>三角粽子造型，传统纹样清新雅致</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 某某工作室 | 蓝印花布文创手作</p>
+    </footer>
+</body>
+</html>
